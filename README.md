@@ -10,7 +10,7 @@ Android Studio with Kotlin.
 The problem was: Create a mobile application for educational purposes for elementary school children. It had to be fun and that children could learn with it.
 
 
-[![Download](https://img.shields.io/badge/Download_APK-180d5b?style=for-the-badge&logoColor=white&labelColor=101010)](https://dragoncrushz.web.app/)
+[![Download](https://img.shields.io/badge/Download_APK-180d5b?style=for-the-badge&logoColor=white&labelColor=101010)](https://www.mediafire.com/file/xn9r1vpenpjs1ci/app-release.apk/file)
 
 ## Requirements
 -Versions after Android 5.</br>
