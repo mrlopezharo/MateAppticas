@@ -1,0 +1,2525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuAppPrincipal"
+
+    >
+
+
+
+    <include
+
+        layout="@layout/toolbar"/>
+
+
+
+
+    <!-- Area menu principal botones para iniciar curso -->
+    <!-- scrollview menu -->
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-26dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contentmenuprincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- Seccion 1 menu niveles Suma  -->
+            <ImageButton
+                android:id="@+id/btnSuma1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="120dp"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/suma" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewSuma1"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="80dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnSuma1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardView1Suma1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/leccion1SumaText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/leccion1SumaText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.083"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion1SumaText1" />
+
+
+                    <Button
+                        android:id="@+id/btnSuma1Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tips"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion1SumaText2" />
+
+                    <Button
+                        android:id="@+id/btnSuma2Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_cardview"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnSuma1Cardview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <!-- separacion entre Botones SUMA 2 -->
+
+            <ImageButton
+                android:id="@+id/btnSuma2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSuma1"
+                app:srcCompat="@drawable/suma" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewSuma2"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="80dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnSuma2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardView1Suma2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/leccion2SumaText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/leccion2SumaText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.083"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion2SumaText1" />
+
+                    <Button
+                        android:id="@+id/btn2Suma2Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tips"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion2SumaText2" />
+
+                    <Button
+                        android:id="@+id/btn1Suma2Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_cardview1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn2Suma2Cardview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- separacion entre Botones SUMA 3 -->
+            <ImageButton
+                android:id="@+id/btnSuma3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="50dp"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/btnSuma2"
+                app:layout_constraintTop_toBottomOf="@+id/btnSuma1"
+                app:srcCompat="@drawable/suma" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewSuma3"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="30dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnSuma3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardView1Suma3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/leccion3SumaText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/leccion3SumaText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.083"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion3SumaText1" />
+
+                    <Button
+                        android:id="@+id/btn2Suma3Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tips"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion3SumaText2" />
+
+                    <Button
+                        android:id="@+id/btn1Suma3Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_cardview"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn2Suma3Cardview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- separacion entre Botones SUMA 4 -->
+            <ImageButton
+                android:id="@+id/btnSuma4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="120dp"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSuma2"
+                app:srcCompat="@drawable/suma" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewSuma4"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="80dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnSuma4"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardView1Suma4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/leccion4SumaText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/leccion4SumaText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.083"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion4SumaText1" />
+
+                    <Button
+                        android:id="@+id/btn2Suma4Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tips"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion4SumaText2" />
+
+                    <Button
+                        android:id="@+id/btn1Suma4Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_cardview"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn2Suma4Cardview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Area de resta -->
+
+            <!-- Area de resta 1 -->
+            <ImageButton
+                android:id="@+id/btnResta1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="120dp"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSuma4"
+                app:srcCompat="@drawable/resta" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewResta1"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="80dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnResta1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardView1Resta1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/leccion1RestaText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/leccion1RestaText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.083"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion1RestaText1" />
+
+                    <Button
+                        android:id="@+id/btnResta1Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tips"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion1RestaText2" />
+
+                    <Button
+                        android:id="@+id/btnResta2Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_cardview"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnResta1Cardview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Area de resta 2 -->
+            <ImageButton
+                android:id="@+id/btnResta2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120dp"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnResta1"
+                app:srcCompat="@drawable/resta" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewResta2"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="80dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnResta2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardView1Resta2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/leccion2RestaText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/leccion2RestaText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.083"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion2RestaText1" />
+
+                    <Button
+                        android:id="@+id/btn2Resta2Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tips"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion2RestaText2" />
+
+                    <Button
+                        android:id="@+id/btn1Resta2Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_cardview1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn2Resta2Cardview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Area de resta 3 -->
+
+            <ImageButton
+                android:id="@+id/btnResta3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="50dp"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnResta1"
+                app:srcCompat="@drawable/resta" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewResta3"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="30dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnResta3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardView1Resta3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/leccion3RestaText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/leccion3RestaText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.083"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion3RestaText1" />
+
+                    <Button
+                        android:id="@+id/btn2Resta3Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tips"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion3RestaText2" />
+
+                    <Button
+                        android:id="@+id/btn1Resta3Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_cardview"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn2Resta3Cardview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Area de resta 4 -->
+
+            <ImageButton
+                android:id="@+id/btnResta4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="120dp"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnResta2"
+                app:srcCompat="@drawable/resta" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewResta4"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="80dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnResta4">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardView1Resta4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/leccion4RestaText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/leccion4RestaText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.083"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion4RestaText1" />
+
+                    <Button
+                        android:id="@+id/btn2Resta4Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tips"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion4RestaText2" />
+
+                    <Button
+                        android:id="@+id/btn1Resta4Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_cardview"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn2Resta4Cardview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Area de Multiplicacion -->
+
+            <!-- Area de Multiplicacion 1 -->
+            <ImageButton
+                android:id="@+id/btnMultiplicacion1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="120dp"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnResta4"
+                app:srcCompat="@drawable/multiplicacion" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewMultiplicacion1"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="80dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnMultiplicacion1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardView1Multiplicacion1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/leccion1MultiplicacionText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/leccion1MultiplicacionText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.083"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion1MultiplicacionText1" />
+
+                    <Button
+                        android:id="@+id/btnMultiplicacion1Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tips"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion1MultiplicacionText2" />
+
+                    <Button
+                        android:id="@+id/btnMultiplicacion2Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_cardview"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnMultiplicacion1Cardview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Area de Multiplicacion 2 -->
+            <ImageButton
+                android:id="@+id/btnMultiplicacion2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="120dp"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnMultiplicacion1"
+                app:srcCompat="@drawable/multiplicacion" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewMultiplicacion2"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="80dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnMultiplicacion2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardView1Multiplicacion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/leccion2MultiplicacionText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/leccion2MultiplicacionText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.083"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion2MultiplicacionText1" />
+
+                    <Button
+                        android:id="@+id/btn2Multiplicacion2Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tips"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion2MultiplicacionText2" />
+
+                    <Button
+                        android:id="@+id/btn1Multiplicacion2Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_cardview1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn2Multiplicacion2Cardview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Area de Multiplicacion 3 -->
+            <ImageButton
+                android:id="@+id/btnMultiplicacion3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="40dp"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnMultiplicacion1"
+                app:srcCompat="@drawable/multiplicacion" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewMultiplicacion3"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="30dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnMultiplicacion3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardView1Multiplicacion3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/leccion3MultiplicacionText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/leccion3MultiplicacionText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.083"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion3MultiplicacionText1" />
+
+                    <Button
+                        android:id="@+id/btn2Multiplicacion3Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tips"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion3MultiplicacionText2" />
+
+                    <Button
+                        android:id="@+id/btn1Multiplicacion3Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_cardview"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn2Multiplicacion3Cardview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Area de Multiplicacion 4 -->
+            <ImageButton
+                android:id="@+id/btnMultiplicacion4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="120dp"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnMultiplicacion2"
+                app:srcCompat="@drawable/multiplicacion" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewMultiplicacion4"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="80dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnMultiplicacion4">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardView1Multiplicacion4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/leccion4MultiplicacionText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/leccion4MultiplicacionText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.083"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion4MultiplicacionText1" />
+
+                    <Button
+                        android:id="@+id/btn2Multiplicacion4Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tips"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion4MultiplicacionText2" />
+
+                    <Button
+                        android:id="@+id/btn1Multiplicacion4Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_cardview"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn2Multiplicacion4Cardview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Area de Divison -->
+
+            <!-- Area de Divison 1 -->
+            <ImageButton
+                android:id="@+id/btnDivision1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="120dp"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnMultiplicacion4"
+                app:srcCompat="@drawable/division" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewDivision1"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="80dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnDivision1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardView1Division1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/leccion1DivisionText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/leccion1DivisionText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.083"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion1DivisionText1" />
+
+
+                    <Button
+                        android:id="@+id/btnDivision1Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tips"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion1DivisionText2" />
+
+                    <Button
+                        android:id="@+id/btnDivision2Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_cardview"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnDivision1Cardview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Area de Divison 2 -->
+            <ImageButton
+                android:id="@+id/btnDivision2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="120dp"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnDivision1"
+                app:srcCompat="@drawable/division" />
+
+            <!-- Area de Divison 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewDivision2"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="80dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnDivision2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardView1Division2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/leccion2DivisionText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/leccion2DivisionText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.083"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion2DivisionText1" />
+
+                    <Button
+                        android:id="@+id/btn2Division2Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tips"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion2DivisionText2" />
+
+                    <Button
+                        android:id="@+id/btn1Division2Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_cardview1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn2Division2Cardview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <ImageButton
+                android:id="@+id/btnDivision3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="40dp"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnDivision1"
+                app:srcCompat="@drawable/division" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewDivision3"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="30dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnDivision3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardView1Division3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/leccion3DivisionText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/leccion3DivisionText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.083"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion3DivisionText1" />
+
+                    <Button
+                        android:id="@+id/btn2Division3Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tips"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion3DivisionText2" />
+
+                    <Button
+                        android:id="@+id/btn1Division3Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_cardview"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn2Division3Cardview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Area de Divison 4 -->
+            <ImageButton
+                android:id="@+id/btnDivision4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="120dp"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnDivision2"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/division" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewDivision4"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="80dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnDivision4">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardView1Division4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/leccion4DivisionText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/leccion4DivisionText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.083"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion4DivisionText1" />
+
+                    <Button
+                        android:id="@+id/btn2Division4Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tips"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/leccion4DivisionText2" />
+
+                    <Button
+                        android:id="@+id/btn1Division4Cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_cardview"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn2Division4Cardview" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewPremium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="300dp"
+                app:cardElevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnDivision4">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cardview_style">
+
+                    <Button
+                        android:id="@+id/btn1Premium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="100dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button_cardview"
+                        android:text="Unete a Premium"
+                        android:textColor="@color/colorCardBoton"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Barras de carga SUMA -->
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="100dp"
+                app:cpb_background_progressbar_color="#e5e5e5"
+                app:cpb_start_angle="180"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar1"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="100dp"
+                app:cpb_background_progressbar_color="#e5e5e5"
+                app:cpb_start_angle="180"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSuma1"
+                />
+
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar2"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="30dp"
+                app:cpb_background_progressbar_color="#e5e5e5"
+                app:cpb_start_angle="180"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/btnSuma2"
+                app:layout_constraintTop_toBottomOf="@+id/btnSuma1"
+                />
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar3"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="100dp"
+                app:cpb_background_progressbar_color="#e5e5e5"
+                app:cpb_start_angle="180"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSuma2"
+                />
+
+
+
+            <!-- Barras de carga RESTA -->
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar4"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="100dp"
+                app:cpb_background_progressbar_color="#e5e5e5"
+                app:cpb_start_angle="180"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSuma4"
+                />
+
+
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar5"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="100dp"
+                app:cpb_background_progressbar_color="#e5e5e5"
+                app:cpb_start_angle="180"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnResta1"
+                />
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar6"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="30dp"
+                app:cpb_background_progressbar_color="#e5e5e5"
+                app:cpb_start_angle="180"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnResta1"
+                />
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar7"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="100dp"
+                app:cpb_background_progressbar_color="#e5e5e5"
+                app:cpb_start_angle="180"
+
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnResta2"
+                />
+
+
+
+            <!-- Barras de carga Multiplicacion -->
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar8"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="100dp"
+                app:cpb_background_progressbar_color="#e5e5e5"
+                app:cpb_start_angle="180"
+
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnResta4"
+                />
+
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar9"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                app:cpb_background_progressbar_color="#e5e5e5"
+
+                app:cpb_start_angle="180"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnMultiplicacion1" />
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar10"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="20dp"
+                android:scaleType="centerInside"
+                app:cpb_background_progressbar_color="#e5e5e5"
+
+                app:cpb_start_angle="180"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnMultiplicacion1" />
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar11"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="100dp"
+                app:cpb_background_progressbar_color="#e5e5e5"
+                app:cpb_start_angle="180"
+
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnMultiplicacion2"
+                />
+
+
+
+
+            <!-- Barras de carga division -->
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar12"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="100dp"
+                app:cpb_background_progressbar_color="#e5e5e5"
+                app:cpb_start_angle="180"
+
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnMultiplicacion4"
+                />
+
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar13"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                app:cpb_background_progressbar_color="#e5e5e5"
+
+                app:cpb_start_angle="180"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnDivision1"
+                />
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar14"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="20dp"
+                android:scaleType="centerInside"
+                app:cpb_background_progressbar_color="#e5e5e5"
+
+                app:cpb_start_angle="180"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnDivision1"
+                />
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar15"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="100dp"
+                app:cpb_background_progressbar_color="#e5e5e5"
+                app:cpb_start_angle="180"
+
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnDivision2"
+                app:layout_constraintVertical_bias="0.0"
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Area coronas de Suma -->
+            <ImageButton
+                android:id="@+id/coronaSuma1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar" />
+
+            <ImageButton
+                android:id="@+id/coronaSuma2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar1"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar1" />
+
+            <ImageButton
+                android:id="@+id/coronaSuma3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar2"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar2" />
+
+            <ImageButton
+                android:id="@+id/coronaSuma4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar3"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar3" />
+
+            <!-- Area coronas de Resta -->
+            <ImageButton
+                android:id="@+id/coronaResta1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar4"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar4" />
+
+            <ImageButton
+                android:id="@+id/coronaResta2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar5"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar5" />
+
+            <ImageButton
+                android:id="@+id/coronaResta3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar6"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar6" />
+
+            <ImageButton
+                android:id="@+id/coronaResta4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar7"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar7" />
+
+
+            <!-- Area coronas de Multiplicacion -->
+            <ImageButton
+                android:id="@+id/coronaMultiplicacion1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar8"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar8" />
+
+            <ImageButton
+                android:id="@+id/coronaMultiplicacion2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar9"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar9" />
+
+            <ImageButton
+                android:id="@+id/coronaMultiplicacion3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar10"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar10" />
+
+            <ImageButton
+                android:id="@+id/coronaMultiplicacion4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar11"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar11" />
+
+
+            <!-- Area coronas de Division -->
+            <ImageButton
+                android:id="@+id/coronaDivison1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar12"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar12" />
+
+            <ImageButton
+                android:id="@+id/coronaDivison2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar13"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar13" />
+
+            <ImageButton
+                android:id="@+id/coronaDivison3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar14"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar14" />
+
+            <ImageButton
+                android:id="@+id/coronaDivison4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar15"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar15" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Area coronas de Suma -->
+            <ImageButton
+                android:id="@+id/coronaSumaOff1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona1"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar" />
+
+            <ImageButton
+                android:id="@+id/coronaSumaOff2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona1"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar1"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar1" />
+
+            <ImageButton
+                android:id="@+id/coronaSumaOff3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona1"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar2"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar2" />
+
+            <ImageButton
+                android:id="@+id/coronaSumaOff4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona1"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar3"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar3" />
+
+            <!-- Area coronas de Resta -->
+            <ImageButton
+                android:id="@+id/coronaRestaOff1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona1"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar4"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar4" />
+
+            <ImageButton
+                android:id="@+id/coronaRestaOff2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona1"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar5"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar5" />
+
+            <ImageButton
+                android:id="@+id/coronaRestaOff3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona1"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar6"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar6" />
+
+            <ImageButton
+                android:id="@+id/coronaRestaOff4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona1"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar7"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar7" />
+
+
+            <!-- Area coronas de Multiplicacion -->
+            <ImageButton
+                android:id="@+id/coronaMultiplicacionOff1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona1"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar8"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar8" />
+
+            <ImageButton
+                android:id="@+id/coronaMultiplicacionOff2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona1"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar9"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar9" />
+
+            <ImageButton
+                android:id="@+id/coronaMultiplicacionOff3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona1"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar10"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar10" />
+
+            <ImageButton
+                android:id="@+id/coronaMultiplicacionOff4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona1"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar11"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar11" />
+
+
+            <!-- Area coronas de Division -->
+            <ImageButton
+                android:id="@+id/coronaDivisonOff1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona1"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar12"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar12" />
+
+            <ImageButton
+                android:id="@+id/coronaDivisonOff2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona1"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar13"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar13" />
+
+            <ImageButton
+                android:id="@+id/coronaDivisonOff3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona1"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar14"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar14" />
+
+            <ImageButton
+                android:id="@+id/coronaDivisonOff4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/corona1"
+                app:layout_constraintEnd_toEndOf="@+id/circularProgressBar15"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar15" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--TEXTO DEL NIVEL -->
+            <TextView
+                android:id="@+id/nivelSuma1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coronaSuma1"
+                app:layout_constraintEnd_toEndOf="@+id/coronaSuma1"
+                app:layout_constraintStart_toStartOf="@+id/coronaSuma1"
+                app:layout_constraintTop_toTopOf="@+id/coronaSuma1" />
+
+
+            <TextView
+                android:id="@+id/nivelSuma2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coronaSuma2"
+                app:layout_constraintEnd_toEndOf="@+id/coronaSuma2"
+                app:layout_constraintStart_toStartOf="@+id/coronaSuma2"
+                app:layout_constraintTop_toTopOf="@+id/coronaSuma2" />
+
+            <TextView
+                android:id="@+id/nivelSuma3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coronaSuma3"
+                app:layout_constraintEnd_toEndOf="@+id/coronaSuma3"
+                app:layout_constraintStart_toStartOf="@+id/coronaSuma3"
+                app:layout_constraintTop_toTopOf="@+id/coronaSuma3" />
+
+            <TextView
+                android:id="@+id/nivelSuma4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coronaSuma4"
+                app:layout_constraintEnd_toEndOf="@+id/coronaSuma4"
+                app:layout_constraintStart_toStartOf="@+id/coronaSuma4"
+                app:layout_constraintTop_toTopOf="@+id/coronaSuma4" />
+
+
+
+            <TextView
+                android:id="@+id/nivelResta1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coronaResta1"
+                app:layout_constraintEnd_toEndOf="@+id/coronaResta1"
+                app:layout_constraintStart_toStartOf="@+id/coronaResta1"
+                app:layout_constraintTop_toTopOf="@+id/coronaResta1" />
+
+            <TextView
+                android:id="@+id/nivelResta2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coronaResta2"
+                app:layout_constraintEnd_toEndOf="@+id/coronaResta2"
+                app:layout_constraintStart_toStartOf="@+id/coronaResta2"
+                app:layout_constraintTop_toTopOf="@+id/coronaResta2" />
+
+            <TextView
+                android:id="@+id/nivelResta3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coronaResta3"
+                app:layout_constraintEnd_toEndOf="@+id/coronaResta3"
+                app:layout_constraintStart_toStartOf="@+id/coronaResta3"
+                app:layout_constraintTop_toTopOf="@+id/coronaResta3" />
+
+            <TextView
+                android:id="@+id/nivelResta4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coronaResta4"
+                app:layout_constraintEnd_toEndOf="@+id/coronaResta4"
+                app:layout_constraintStart_toStartOf="@+id/coronaResta4"
+                app:layout_constraintTop_toTopOf="@+id/coronaResta4" />
+
+
+            <TextView
+                android:id="@+id/nivelMultiplicacion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coronaMultiplicacion1"
+                app:layout_constraintEnd_toEndOf="@+id/coronaMultiplicacion1"
+                app:layout_constraintStart_toStartOf="@+id/coronaMultiplicacion1"
+                app:layout_constraintTop_toTopOf="@+id/coronaMultiplicacion1" />
+
+            <TextView
+                android:id="@+id/nivelMultiplicacion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coronaMultiplicacion2"
+                app:layout_constraintEnd_toEndOf="@+id/coronaMultiplicacion2"
+                app:layout_constraintStart_toStartOf="@+id/coronaMultiplicacion2"
+                app:layout_constraintTop_toTopOf="@+id/coronaMultiplicacion2" />
+
+            <TextView
+                android:id="@+id/nivelMultiplicacion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coronaMultiplicacion3"
+                app:layout_constraintEnd_toEndOf="@+id/coronaMultiplicacion3"
+                app:layout_constraintStart_toStartOf="@+id/coronaMultiplicacion3"
+                app:layout_constraintTop_toTopOf="@+id/coronaMultiplicacion3" />
+
+            <TextView
+                android:id="@+id/nivelMultiplicacion4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coronaMultiplicacion4"
+                app:layout_constraintEnd_toEndOf="@+id/coronaMultiplicacion4"
+                app:layout_constraintStart_toStartOf="@+id/coronaMultiplicacion4"
+                app:layout_constraintTop_toTopOf="@+id/coronaMultiplicacion4" />
+
+
+
+            <TextView
+                android:id="@+id/nivelDivision1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coronaDivison1"
+                app:layout_constraintEnd_toEndOf="@+id/coronaDivison1"
+                app:layout_constraintStart_toStartOf="@+id/coronaDivison1"
+                app:layout_constraintTop_toTopOf="@+id/coronaDivison1" />
+
+            <TextView
+                android:id="@+id/nivelDivision2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coronaDivison2"
+                app:layout_constraintEnd_toEndOf="@+id/coronaDivison2"
+                app:layout_constraintStart_toStartOf="@+id/coronaDivison2"
+                app:layout_constraintTop_toTopOf="@+id/coronaDivison2" />
+
+
+            <TextView
+                android:id="@+id/nivelDivision3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coronaDivison3"
+                app:layout_constraintEnd_toEndOf="@+id/coronaDivison3"
+                app:layout_constraintStart_toStartOf="@+id/coronaDivison3"
+                app:layout_constraintTop_toTopOf="@+id/coronaDivison3" />
+
+            <TextView
+                android:id="@+id/nivelDivision4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coronaDivison4"
+                app:layout_constraintEnd_toEndOf="@+id/coronaDivison4"
+                app:layout_constraintStart_toStartOf="@+id/coronaDivison4"
+                app:layout_constraintTop_toTopOf="@+id/coronaDivison4" />
+
+
+
+
+
+
+
+
+
+
+            <!-- Text debajo de cada button-->
+
+            <TextView
+                android:id="@+id/nombreSeccionSuma1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Suma 1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnSuma1"
+                app:layout_constraintStart_toStartOf="@+id/btnSuma1"
+                app:layout_constraintTop_toBottomOf="@+id/btnSuma1"
+                />
+
+            <TextView
+                android:id="@+id/nombreSeccionSuma2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Suma 2"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnSuma2"
+                app:layout_constraintStart_toStartOf="@+id/btnSuma2"
+                app:layout_constraintTop_toBottomOf="@+id/btnSuma2" />
+
+            <TextView
+                android:id="@+id/nombreSeccionSuma3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Suma 3"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnSuma3"
+                app:layout_constraintStart_toStartOf="@+id/btnSuma3"
+                app:layout_constraintTop_toBottomOf="@+id/btnSuma3"
+                />
+
+            <TextView
+                android:id="@+id/nombreSeccionSuma4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Suma 4"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnSuma4"
+                app:layout_constraintStart_toStartOf="@+id/btnSuma4"
+                app:layout_constraintTop_toBottomOf="@+id/btnSuma4"
+                />
+            <!-- Text debajo de cada button resta-->
+            <TextView
+                android:id="@+id/nombreSeccionResta1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Resta 1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnResta1"
+                app:layout_constraintStart_toStartOf="@+id/btnResta1"
+                app:layout_constraintTop_toBottomOf="@+id/btnResta1"
+                />
+            <TextView
+                android:id="@+id/nombreSeccionResta2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Resta 2"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnResta2"
+                app:layout_constraintStart_toStartOf="@+id/btnResta2"
+                app:layout_constraintTop_toBottomOf="@+id/btnResta2"
+                />
+            <TextView
+                android:id="@+id/nombreSeccionResta3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Resta 3"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnResta3"
+                app:layout_constraintStart_toStartOf="@+id/btnResta3"
+                app:layout_constraintTop_toBottomOf="@+id/btnResta3"
+                />
+            <TextView
+                android:id="@+id/nombreSeccionResta4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Resta 4"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnResta4"
+                app:layout_constraintStart_toStartOf="@+id/btnResta4"
+                app:layout_constraintTop_toBottomOf="@+id/btnResta4"
+                />
+            <!-- Text debajo de cada button Multiplicacion-->
+            <TextView
+                android:id="@+id/nombreSeccionMultiplicacion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Multiplicacion 1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnMultiplicacion1"
+                app:layout_constraintStart_toStartOf="@+id/btnMultiplicacion1"
+                app:layout_constraintTop_toBottomOf="@+id/btnMultiplicacion1"
+                />
+            <TextView
+                android:id="@+id/nombreSeccionMultiplicacion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Multiplicacion 2"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnMultiplicacion2"
+                app:layout_constraintStart_toStartOf="@+id/btnMultiplicacion2"
+                app:layout_constraintTop_toBottomOf="@+id/btnMultiplicacion2"
+                />
+            <TextView
+                android:id="@+id/nombreSeccionMultiplicacion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Multiplicacion 3"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnMultiplicacion3"
+                app:layout_constraintStart_toStartOf="@+id/btnMultiplicacion3"
+                app:layout_constraintTop_toBottomOf="@+id/btnMultiplicacion3"
+                />
+            <TextView
+                android:id="@+id/nombreSeccionMultiplicacion4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Multiplicacion 4"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnMultiplicacion4"
+                app:layout_constraintStart_toStartOf="@+id/btnMultiplicacion4"
+                app:layout_constraintTop_toBottomOf="@+id/btnMultiplicacion4"
+                />
+            <!-- Text debajo de cada button Division-->
+            <TextView
+                android:id="@+id/nombreSeccionDivision1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Division 1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnDivision1"
+                app:layout_constraintStart_toStartOf="@+id/btnDivision1"
+                app:layout_constraintTop_toBottomOf="@+id/btnDivision1"
+                />
+            <TextView
+                android:id="@+id/nombreSeccionDivision2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Division 2"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnDivision2"
+                app:layout_constraintStart_toStartOf="@+id/btnDivision2"
+                app:layout_constraintTop_toBottomOf="@+id/btnDivision2"
+                />
+            <TextView
+                android:id="@+id/nombreSeccionDivision3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Division 3"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnDivision3"
+                app:layout_constraintStart_toStartOf="@+id/btnDivision3"
+                app:layout_constraintTop_toBottomOf="@+id/btnDivision3"
+                />
+            <TextView
+                android:id="@+id/nombreSeccionDivision4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Division 4"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnDivision4"
+                app:layout_constraintStart_toStartOf="@+id/btnDivision4"
+                app:layout_constraintTop_toBottomOf="@+id/btnDivision4"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </ScrollView>
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:fab_addButtonColorNormal="@color/colorCardBoton"
+        app:fab_addButtonColorPressed="@color/colorCardBoton1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/dashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_addButtonColorNormal="@color/colorCardBoton1"
+            app:fab_icon="@drawable/severity"
+            app:fab_size="mini"
+            />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/zombies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            app:fab_addButtonColorNormal="@color/colorCardBoton2"
+            app:fab_icon="@drawable/zombieicon"
+            app:fab_size="mini" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/cerrarSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_addButtonColorNormal="@color/colorCardBoton3"
+            app:fab_icon="@drawable/usuarioicon"
+            app:fab_size="mini"
+            />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

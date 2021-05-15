@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "252499257060",
+    "firebase_url": "https://mateappticas.firebaseio.com",
+    "project_id": "mateappticas",
+    "storage_bucket": "mateappticas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252499257060:android:ca48cecb277c1f48aa6ef1",
+        "android_client_info": {
+          "package_name": "com.example.mate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252499257060-s61e4c3k8vtq92buccddar30o9hq6esv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE1ceEA3B07ohmau74Xl2Vao6spu9oJOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252499257060-s61e4c3k8vtq92buccddar30o9hq6esv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

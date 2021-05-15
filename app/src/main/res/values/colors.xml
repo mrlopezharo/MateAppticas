@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2ea2db</color>
+    <color name="colorPrimaryDark">#202732</color>
+    <color name="colorAccent">#183650</color>
+
+
+
+
+    <color name="colorApp1">#e1e6e9</color>
+    <color name="colorApp2">#f10930</color>
+    <color name="fondo">#1cb0f6</color>
+    <color name="botones">#3072c6</color>
+
+
+
+
+
+    <color name="error">#ff4b4b</color>
+
+    <color name="noSeleccionado">#e5e5e5</color>
+
+
+
+    <!-- colores para cardview -->
+    <!-- cardview 0-->
+    <color name="colorCardFondo">#1cb0f6</color>
+    <color name="colorCardBoton">#286ec8</color>
+
+    <!-- cardview 1-->
+    <color name="colorCardFondo1">#b8f28b</color>
+    <color name="colorCardBoton1">#78c800</color>
+
+    <!-- cardview 2-->
+    <color name="colorCardFondo2">#ff9600</color>
+    <color name="colorCardBoton2">#cc7800</color>
+
+    <!-- cardview 3-->
+    <color name="colorCardFondo3">#ce82ff</color>
+    <color name="colorCardBoton3">#a568cc</color>
+
+
+    <color name="colorWhite">#ffffff</color><!--f4f4f4 -->
+
+    <!-- Barra en el menu principal -->
+    <color name="colorCorona">#ffc800</color>
+    <color name="colorPremiumPuntos">#80ecd9</color>
+
+
+
+    <!--
+    cardviews ejercicios
+    fondo de botones de respuesta cuando es seleccionado -->
+
+    <color name="respuestaSeleccionada">#c0e9fd</color>
+
+    <color name="respuestaCorrecta">#cbffd2</color>
+
+    <color name="transparente">#00000000</color>
+
+
+
+    <color name="ColorCardviewRespuestaIncorrecta">#ffc1c1</color>
+    <color name="ColorBtnIncorrecto">#ff4b4b</color>
+
+
+
+
+
+    <color name="completadoMenu">#ffcf33</color>
+    <color name="completadoMenuFuerte">#e6b208</color>
+
+
+
+    <color name="Negro">#000000</color>
+
+
+
+
+    <color name="Naranjagrafica">#ef6c00</color>
+    <color name="AzulbajoGrafica">#64b5f6</color>
+    <color name="AzulfuerteGrafica">#1976d2</color>
+
+
+
+</resources>
